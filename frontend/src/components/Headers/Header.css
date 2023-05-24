@@ -1,0 +1,22 @@
+.header-container {
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-link {
+    margin-right: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header-link:last-child {
+    margin-right: 0;
+  }
+  
