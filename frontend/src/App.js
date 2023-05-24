@@ -1,22 +1,15 @@
-import {BrowserRouter, Routes,Route} from "react-router-dom"
-import './App.css';
-import Form from './components/Form/Form'
-import Entry from './components/Entry/Entry'
-import List from './components/List/List'
-import Header from './components/Headers/Header'
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import CreateEmployeePage from "./pages/CreateEmployeePage";
 
-const App =()=> {
+function App() {
   return (
-    <>
-    <BrowserRouter>
-    <Header/>
-    <Routes>
-        <Route path= "/" element={<Form/>}/>
-        <Route path= "/Entry" element={<Entry/>}/>
-        <Route path= "/List" element={<List/>}/>
+    <div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/addemployee" element={<CreateEmployeePage />} />
       </Routes>
-     </BrowserRouter>
-    </>
+    </div>
   );
 }
 
